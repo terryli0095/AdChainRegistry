@@ -1,5 +1,5 @@
-pragma solidity 0.4.11
-import "Parametrizer.sol";
+pragma solidity 0.4.11;
+import "./Parametrizer.sol";
 
 contract Application {
 	address owner;
