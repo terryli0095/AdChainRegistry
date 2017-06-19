@@ -16,7 +16,27 @@ contract Config {
 	uint public initialProposalThreshold
 	/// num votes needed to pass a reparameterization 
 	uint public votesQuota;
-	
+
 	/// maps proposal hashes to corresponding vote tallies
 	mapping(bytes32 => uint) public proposalMap;
+
+	function Config(
+		uint _minDeposit,
+		uint _challengeDuration,
+		uint _registryDuration,
+		uint _commitVoteDuration,
+		uint _revealVoteDuration,
+		uint _dispensationRatio,
+		uint _initialProposalThreshold,
+		uint _votesQuota
+	) {
+		minDeposit; = _minDeposit; 
+		challengeDuration = _challengeDuration;
+		registryDuration = _registryDuration;
+		commitVoteDuration = _commitVoteDuration;
+		revealVoteDuration = _revealVoteDuration;
+		dispensationRatio = _dispensationRatio;
+		initialProposalThreshold = _initialProposalThreshold;
+		votesQuota = _votesQuota;
+	}
 }
