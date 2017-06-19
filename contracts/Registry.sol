@@ -54,6 +54,7 @@ contract Registry {
 		// trigger an event
 	}
 
+
 	// save challenger somewhere
 	function challenge(string _domain) {
 		require(token.allowance(msg.sender, this) >= applyCost);
