@@ -53,8 +53,17 @@ contract Registry {
 		domainMap[domainHash].time = now + challengeTime;	
 		// trigger an event
 	}
+##test
 
-	// save challenger somewhere
+##test
+##test
+##test
+##test
+##test
+##test
+
+
+// save challenger somewhere
 	function challenge(string _domain) {
 		require(token.allowance(msg.sender, this) >= applyCost);
 		token.transferFrom(msg.sender, wallet, applyCost);
